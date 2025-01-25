@@ -1,6 +1,6 @@
 describe('Homepage User Flows', () => {
   beforeEach(() => {
-    cy.viewport(11440, 900)
+    cy.viewport(2000, 900)
     cy.visit('http://localhost:3000')
   })
 

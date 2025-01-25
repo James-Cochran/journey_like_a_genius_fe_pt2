@@ -5,37 +5,37 @@ body {
   background-image: linear-gradient(to bottom, #fbf0da, #fcead0);
 }
 
-main {
-  width: 215%;
+.homepage-main {
+  width: 200%;
   height: 96vh;
   background-image: url('/public/travel.png');
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
-  left: -55%;
+  left: -35%;
 }
 
-section {
+.homepage-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 30%;
-  position: relative;
-  right: 10;
-  top: 0;
-  bottom: 0;
-  padding-right: 60px;
+  /* position: relative; */
+  /* right: 10; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* padding-right: 60px; */
 }
 
-header {
+.homepage-header {
   text-align: left;
   font-family: Arial, sans-serif;
   padding: 5px;
-  margin-left: 15em;
+  margin-left: 13em;
 }
 
-h1 {
+.homepage-h1 {
   font-size: 24px;
   margin-bottom: 15px;
   font-size: xx-large;
@@ -69,6 +69,38 @@ button {
 
 .login-button {
   position: fixed;
-  margin-left: -14.6rem;
-  top: 6em
+  margin-left: -12.6rem;
+  top: 7em
 }
+
+@media (max-width: 1500px) {
+  .homepage-main {
+    left: -15%;
+  }
+}
+
+@media (max-width: 1215px) {
+  .homepage-main {
+    left: 10%;
+  }
+}
+
+@media (max-width: 805px) {
+  .homepage-main {
+    background-image: linear-gradient(to bottom, #fbf0da, #fcead0);
+
+    left: 15%;
+  }
+}
+
+@media (max-width: 555px) {
+  .homepage-header{
+    margin-left: 10%;
+  }
+  .login-button {
+    position: fixed;
+    margin-left: -2.6rem;
+    top: 7em
+  }
+}
+

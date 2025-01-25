@@ -1,6 +1,6 @@
 describe('Saved Itineraries User Flows', () => {
   beforeEach(() => {
-    cy.viewport(11440, 900)
+    cy.viewport(2000, 900)
     cy.visit('https://journeylikeagenius.netlify.app/')
     cy.intercept('GET', '**/api/v1/itineraries', {
       fixture: 'saved_itineraries.json',

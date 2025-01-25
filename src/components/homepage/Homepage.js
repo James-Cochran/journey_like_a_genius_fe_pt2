@@ -17,9 +17,9 @@ const Homepage = () => {
   }, [userId, navigate])
 
   return (
-  <main>
-    <header>  
-      <h1> Journey Like a Genius </h1>
+  <main className="homepage-main">
+    <header className="homepage-header">  
+      <h1 className="homepage-h1"> Journey Like a Genius </h1>
         <button className="login-button" onClick={login} >Login!</button>
     </header>
     <section className="homepage-section">

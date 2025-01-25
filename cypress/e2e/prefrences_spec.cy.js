@@ -1,6 +1,6 @@
 describe("Preferences Form", () => {
   beforeEach(() => {
-    cy.viewport(1440, 900)
+    cy.viewport(2000, 900)
     cy.intercept("GET", 'http://localhost:3001/api/v1/itinerary')
     cy.visit("http://localhost:3000/preferences/1")
   })
