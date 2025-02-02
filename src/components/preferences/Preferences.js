@@ -69,12 +69,11 @@ const Preferences = () => {
 
   return (
     <main className="preferences-container">
-      <h2>Please make your selections</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-section">
+      <h2 className="preferences-title">Please make your selections</h2>
+      <form className="form-section" onSubmit={handleSubmit}>
 
         <section className="city-input-section">
-          <h3>What City Are You In?</h3>
+          <h3>What city are you in?</h3>
           <input
             type="text"
             id="city"
@@ -215,7 +214,6 @@ const Preferences = () => {
             <label for="vietnamese">Vietnamese</label>
           </article>
         </section>
-        </div>
 
         {errors.length > 0 && (
           <div className="error-messages">
@@ -227,14 +225,13 @@ const Preferences = () => {
             </ul>
           </div>
         )}
-
-        <button 
+      </form>
+      <button 
           className="submit-button" 
           type="submit"
         >
           Submit Your Preferences
-        </button>
-      </form>
+      </button>
     </main>
   );
 };
