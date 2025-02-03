@@ -21,11 +21,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 30%;
-  /* position: relative; */
-  /* right: 10; */
-  /* top: 0; */
-  /* bottom: 0; */
-  /* padding-right: 60px; */
 }
 
 .homepage-header {
@@ -88,19 +83,18 @@ button {
 @media (max-width: 805px) {
   .homepage-main {
     background-image: linear-gradient(to bottom, #fbf0da, #fcead0);
+    width: 100%;
+    height: 100%;
+    left: 0%;
+  }
 
-    left: 15%;
+  .homepage-section {
+    align-items: center;
+    width: 100%;
+  }
+
+  h2, p {
+    padding-left: 0px;
+    margin-right: 0px;
   }
 }
-
-@media (max-width: 555px) {
-  .homepage-header{
-    margin-left: 10%;
-  }
-  .login-button {
-    position: fixed;
-    margin-left: -2.6rem;
-    top: 7em
-  }
-}
-
